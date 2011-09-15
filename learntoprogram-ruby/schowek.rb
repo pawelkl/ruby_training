@@ -3,10 +3,12 @@ buf = []
 while (input = gets.chomp) != ''
 	buf.push input
 end
-buf2 = buf.sort
+buf.sort
 #buf.each do
 #	puts buf.pop
 #end
-while buf2.length > 0
-	puts buf2.pop
+while buf.length > 0
+#	puts buf.pop
+	puts buf[buf.length-1]
+	buf.pop
 end
